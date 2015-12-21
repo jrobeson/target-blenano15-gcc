@@ -1,0 +1,81 @@
+{
+  "name": "blenano15-gcc",
+  "version": "1.0.0",
+  "inherits": {
+    "nordic-nrf51822-gcc": "^1.0.0"
+  },
+  "description": "mbed build target for the BLE Nano 1.5 (32KB RAM).",
+  "homepage": "https://github.com/jrobeson/target-blenano15-gcc",
+  "repository": {
+    "url": "git@github.com:jrobeson/target-blenano15-gcc.git",
+    "type": "git"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "blenano",
+    "mbed-target:blenano15",
+    "gcc"
+  ],
+  "similarTo": [
+    "blenano"
+  ],
+  "config": {
+    "nrf51822": {
+      "ram_size": "32K"
+    },
+    "image": {
+      "heap": {
+        "warning_threshold": 1024
+      }
+    },
+    "hardware": {
+      "pins": {
+        "LED1": "p19",
+        "LED2": "p19",
+        "LED3": "p19",
+        "LED4": "p19",
+        "RX_PIN_NUMBER": "p11",
+        "TX_PIN_NUMBER": "p9",
+        "CTS_PIN_NUMBER": "p10",
+        "RTS_PIN_NUMBER": "p8",
+        "USBTX": "TX_PIN_NUMBER",
+        "USBRX": "RX_PIN_NUMBER",
+        "SPI_PSELMOSI0": "p9",
+        "SPI_PSELMISO0": "p11",
+        "SPI_PSELSS0": "p10",
+        "SPI_PSELSCK0": "p8",
+        "SPI_PSELMOSI1": "p9",
+        "SPI_PSELMISO1": "p11",
+        "SPI_PSELSS1": "p10",
+        "SPI_PSELSCK1": "p8",
+        "SPIS_PSELMOSI": "p9",
+        "SPIS_PSELMISO": "p11",
+        "SPIS_PSELSS": "p10",
+        "SPIS_PSELSCK": "p8",
+        "I2C_SDA0": "p10",
+        "I2C_SCL0": "p8",
+        "D0": "p11",
+        "D1": "p9",
+        "D2": "p10",
+        "D3": "p8",
+        "D4": "p28",
+        "D5": "p29",
+        "D6": "p15",
+        "D7": "p7",
+        "D13": "p19",
+        "A0": "p1",
+        "A1": "p2",
+        "A2": "p3",
+        "A3": "p4",
+        "A4": "p5",
+        "A5": "p6",
+        "D19": "p1",
+        "D20": "p2",
+        "D21": "p2",
+        "D22": "p4",
+        "D23": "p5",
+        "D24": "p6"
+      }
+    }
+  }
+}
